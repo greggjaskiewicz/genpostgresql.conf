@@ -23,6 +23,7 @@ class PostgresConfig:
   def __init__(self):
     """ constructor """
     self.config = self._options.copy()
+    self.result = 0.0
     for option in self.config:
       self.config[option] = 0
 
@@ -113,12 +114,29 @@ class PostgresConfig:
       return '%dMB' % (val/(1024*1024))
 
 
+
+  def print_out_to_file(self, file_name):
+    f = open(file_name, 'w')
+    print >> f, self.get_config()
+    f.close()
+
+
+
   def print_out(self):
+    print self.get_config()
+
+
+
+  def get_config(self):
+    """ put the config into the return string """
+    config=""
     for option in self.config:
+      stroption = str(self.config[option])
       if self._options[option] == 'memory':
-        print option, '\t= ', self._memory_value_from_int(self.config[option])
+        config = config + '\n' + option + '\t= ' + self._memory_value_from_int(self.config[option])
       else:
-        print option, '\t= ', self.config[option]
+        config = config + '\n' + option + '\t= ' + stroption
+    return config
 
 
 
