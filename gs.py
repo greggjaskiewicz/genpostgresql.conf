@@ -83,7 +83,7 @@ def mutate_new_population(parent_population):
   """ take what's there, and mate them until you get at most population_size """
   new_population = []
   for x in range(len(parent_population)):
-    for y in x:
+    for y in range(x):
       if (x == y):
         continue #need two different mates!
       newguy = copy.deepcopy(parent_population[x])
