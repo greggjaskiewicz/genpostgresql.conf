@@ -19,8 +19,8 @@ import random
 import pickle
 
 class PostgresConfig:
-  """foo bar """
-# add seq_page_cost, random_page_cost, cpu_tuple_cost, cpu_index_tuple_cost,cpu_operator_cost,
+  """options"""
+
   _options = {'shared_buffers':'memory', 'effective_cache_size':'memory', 'checkpoint_segments':'uint',
               'checkpoint_completion_target':'0.0to1.0', 'default_statistics_target':'uint',
               'maintenance_work_mem':'memory', 'work_mem':'memory', 'wal_buffers':'memory',
