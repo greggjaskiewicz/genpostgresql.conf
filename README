@@ -1,0 +1,50 @@
+What is this Greg ?
+""""""""""""""""""""""
+
+Well, I've always been fascinated with genetic algorithms. Having solved one problem in the past using the genetic algorithm of a kind (don’t ask me about the exact name) – I wanted to try applying it to a different kind of issue. 
+Basically – whenever you have an issue that can be solved in many ways, with multi dimensional solution space – genetic algorithms become useful. This is even more so when the number of dimensions increases and ability to test all possible solutions is not possible. Well – sounds like something you can apply to systems with many configuration options. So I thought, well – lets see what can we do here with PostgreSQL. 
+
+Mind you, this is a very simple project – if not just a proof of concept. I’m currently in the middle of testing it on few different machines. 
+
+It’s written in Python 2.7. I tested it on Mac OSX 10.8. But I’m sure it will work on Linux too (I don’t do anything OSX specific here).
+
+
+What's here
+""""""""""""""""""""""
+
+Currently comprises of two python files:
+•	postgres_config.py – implements PostgreSQL configuration actions. Such as, generate random configuration file, run cross over ‘mating’, print or save configuration file, etc.;
+•	gs.py – main file. Runs the actual genetic algorithm, implements bits of it in rather loose fashion (this should really be split into separate class that would be agnostic to the type of configuration or problem it tries to ran) 
+
+
+And shell files:
+•	setup_test_env.sh – sets up PostgreSQL as your current user (do not run it as root ! besides being bonkers way of doing things, it is rather dangerous!). It sets up your PostgreSQL instance in /tmp/pgbench. Again, something that should be configurable
+•	reload_postgresql_with_new_config.sh – used by the python scripts, takes single parameter. The parameter being the configuration file. It stops current instance (which could fail), replaces postgresql.conf with the file supplied and starts new instance again. Paths are hardcoded (bad).
+•	run_a_test.sh – as the name suggests, is used by the python process to perform single test. Runs pgbench tests (write and select test). Each test is suppose to run for 15s (configurable of course). Echoes out the result (adds tps from both transactions) – which is used by the python process. If failed, 0 is echoed
+
+
+How do I try it Greg ?
+"""""""""""""""""""""""
+
+All scripts assume PostgreSQL is installed in /usr/local/pgsql . That’s where I have it – change paths if you want. 
+
+Again, this whole thing is rather basic – and still needs a lot of work (like any proof of concept). 
+
+To run it:
+•	make sure your postgresql is installed in /usr/local/pgsql
+•	don’t be root ;{)
+•	run ./ setup_test_env.sh
+•	run python gs.py
+
+Leave it running for few days. Collect results from population_[n].ppldump files. It will include all configuration bits and the result. Currently there’s no general goal (just like in nature) this has to achieve to stop. So it will be running 1000 (hardcoded) populations and then it will stop (that would take a while, so …). In my experience it takes about 45 minutes to run one population, more or less. 
+
+
+What's next Greg ?
+""""""""""""""""""""""
+
+Any positive comments, patches, creative ideas - please email me.
+Money or job offers (I'm a freelancer) - contact me too please !
+If you want to tell me how bad this is, and how wrong I am - send it to /dev/null
+
+
+
