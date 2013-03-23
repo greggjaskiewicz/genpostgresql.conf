@@ -6,6 +6,13 @@ Includes only performance related options - to keep it simple
 
 Licenced under PostgreSQL BSD Licence
 
+
+TODO list:
+* generate baseline postgresql.confs more sensibly then just random.
+* improve the way random mutations are done
+* more postgresql options
+* serialise to database, deserialise from database
+
 """
 
 import random

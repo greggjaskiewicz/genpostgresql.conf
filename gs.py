@@ -1,3 +1,20 @@
+"""
+Genetic server for postgresql configuration genetic thingie
+Includes only performance related options - to keep it simple
+
+(c) Greg Jaskiewicz 2013
+
+Licenced under PostgreSQL BSD Licence
+
+TODO:
+* split gentic stuff into separate agnostic class
+* store results and so on in database maybe (sqllite would do)
+* save/restore of state ?
+* separate configuration file
+* improve perhaps the way new generation is generated. Current one isn't perhaps the greatest - but still not bad
+* we don't have a goal to reach here. It just keeps on going. So perhaps make that an option?
+"""
+
 from postgres_config import PostgresConfig
 import random
 import copy
@@ -5,7 +22,7 @@ import shlex, subprocess
 import os
 
 
-population_size=10
+population_size=24
 current_population = []
 new_pg_config="/tmp/new_pg_config.conf"
 
@@ -14,10 +31,12 @@ def generate_initial_population(the_population_size):
   while the_population_size>=0:
     the_population_size = the_population_size-1
     p = PostgresConfig()
+    # maybe use some less random methods to generate different postgrsql configurations
     p.set_random()
     newpopulation.append(p)
 
   return newpopulation
+
 
 def run_test(g):
   #g.result = 10.0
