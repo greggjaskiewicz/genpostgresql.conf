@@ -28,7 +28,7 @@ new_pg_config="/tmp/new_pg_config.conf"
 
 def generate_initial_population(the_population_size):
   newpopulation = []
-  while the_population_size>=0:
+  while the_population_size > 0:
     the_population_size = the_population_size-1
     p = PostgresConfig()
     # maybe use some less random methods to generate different postgrsql configurations
