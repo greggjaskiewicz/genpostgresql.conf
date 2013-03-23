@@ -13,10 +13,12 @@ import pickle
 
 class PostgresConfig:
   """foo bar """
+# add seq_page_cost, random_page_cost, cpu_tuple_cost, cpu_index_tuple_cost,cpu_operator_cost,
   _options = {'shared_buffers':'memory', 'effective_cache_size':'memory', 'checkpoint_segments':'uint',
               'checkpoint_completion_target':'0.0to1.0', 'default_statistics_target':'uint',
               'maintenance_work_mem':'memory', 'work_mem':'memory', 'wal_buffers':'memory',
-              'random_page_cost':'0.0to1.0'
+              'random_page_cost':'0.0to50.0', 'seq_page_cost':'0.0to50.0', 'cpu_tuple_cost':'0.0to50.0',
+              'cpu_index_tuple_cost':'0.0to50.0', 'cpu_operator_cost':'0.0to50.0'
   }
 
 
@@ -35,6 +37,8 @@ class PostgresConfig:
       return val
     elif thetype == '0.0to1.0':
       return round(random.random(), 3)
+    elif thetype == '0.0to50.0':
+      return round(random.uniform(0.01, 50.0), 3)
     elif thetype == 'uint':
       return random.randint(1, 1024)
     else:
@@ -109,7 +113,7 @@ class PostgresConfig:
 
   def _memory_value_from_int(self, val):
     if (val <= 2*1024*1024):
-      return '%dkb' % val
+      return '%dkB' % val
     else:
       return '%dMB' % (val/(1024*1024))
 
