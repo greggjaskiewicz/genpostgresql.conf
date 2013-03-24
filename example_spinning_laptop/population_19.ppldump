@@ -1,0 +1,408 @@
+
+default_statistics_target	= 883
+seq_page_cost	= 32.4
+checkpoint_completion_target	= 0.17685
+cpu_index_tuple_cost	= 25.745
+shared_buffers	= 189MB
+cpu_tuple_cost	= 26.467
+random_page_cost	= 26.725
+effective_cache_size	= 130MB
+cpu_operator_cost	= 8.294
+work_mem	= 769MB
+wal_buffers	= 261MB
+checkpoint_segments	= 114
+maintenance_work_mem	= 646MB
+score = 304.333333333
+
+
+
+default_statistics_target	= 866
+seq_page_cost	= 32.4
+checkpoint_completion_target	= 0.159
+cpu_index_tuple_cost	= 25.745
+shared_buffers	= 196MB
+cpu_tuple_cost	= 26.467
+random_page_cost	= 26.725
+effective_cache_size	= 554MB
+cpu_operator_cost	= 8.294
+work_mem	= 792MB
+wal_buffers	= 277MB
+checkpoint_segments	= 95
+maintenance_work_mem	= 576MB
+score = 305.333333333
+
+
+
+default_statistics_target	= 866
+seq_page_cost	= 44.351
+checkpoint_completion_target	= 0.17685
+cpu_index_tuple_cost	= 25.745
+maintenance_work_mem	= 565MB
+cpu_tuple_cost	= 26.467
+random_page_cost	= 26.725
+effective_cache_size	= 544MB
+cpu_operator_cost	= 8.294
+work_mem	= 783MB
+wal_buffers	= 286MB
+checkpoint_segments	= 114
+shared_buffers	= 322MB
+score = 306.333333333
+
+
+
+default_statistics_target	= 840
+seq_page_cost	= 32.4
+cpu_tuple_cost	= 26.467
+cpu_index_tuple_cost	= 25.745
+shared_buffers	= 314MB
+checkpoint_completion_target	= 0.17015
+random_page_cost	= 26.725
+effective_cache_size	= 138MB
+cpu_operator_cost	= 8.294
+work_mem	= 819MB
+wal_buffers	= 259MB
+checkpoint_segments	= 91
+maintenance_work_mem	= 622MB
+score = 305.666666667
+
+
+
+default_statistics_target	= 840
+seq_page_cost	= 32.4
+checkpoint_completion_target	= 0.1662
+cpu_index_tuple_cost	= 25.745
+shared_buffers	= 314MB
+cpu_tuple_cost	= 26.467
+random_page_cost	= 26.725
+effective_cache_size	= 145MB
+cpu_operator_cost	= 8.294
+work_mem	= 804MB
+wal_buffers	= 286MB
+checkpoint_segments	= 114
+maintenance_work_mem	= 650MB
+score = 303.666666667
+
+
+
+default_statistics_target	= 829
+seq_page_cost	= 32.4
+cpu_tuple_cost	= 26.467
+cpu_index_tuple_cost	= 25.745
+shared_buffers	= 314MB
+checkpoint_completion_target	= 0.1638
+random_page_cost	= 26.725
+effective_cache_size	= 138MB
+cpu_operator_cost	= 8.294
+work_mem	= 830MB
+wal_buffers	= 286MB
+checkpoint_segments	= 95
+maintenance_work_mem	= 576MB
+score = 303.0
+
+
+
+default_statistics_target	= 866
+seq_page_cost	= 32.4
+cpu_tuple_cost	= 4.459
+cpu_index_tuple_cost	= 25.745
+maintenance_work_mem	= 608MB
+checkpoint_completion_target	= 0.159
+random_page_cost	= 26.725
+effective_cache_size	= 559MB
+cpu_operator_cost	= 8.294
+work_mem	= 769MB
+wal_buffers	= 237MB
+checkpoint_segments	= 114
+shared_buffers	= 319MB
+score = 303.0
+
+
+
+default_statistics_target	= 883
+seq_page_cost	= 32.4
+checkpoint_completion_target	= 0.159
+cpu_index_tuple_cost	= 25.745
+shared_buffers	= 331MB
+cpu_tuple_cost	= 26.467
+random_page_cost	= 26.725
+effective_cache_size	= 130MB
+cpu_operator_cost	= 8.294
+work_mem	= 763MB
+wal_buffers	= 237MB
+checkpoint_segments	= 114
+maintenance_work_mem	= 648MB
+score = 299.666666667
+
+
+
+default_statistics_target	= 866
+seq_page_cost	= 44.351
+cpu_tuple_cost	= 4.459
+cpu_index_tuple_cost	= 25.745
+shared_buffers	= 306MB
+checkpoint_completion_target	= 0.15465
+random_page_cost	= 26.725
+effective_cache_size	= 115MB
+cpu_operator_cost	= 8.294
+work_mem	= 784MB
+wal_buffers	= 237MB
+checkpoint_segments	= 95
+maintenance_work_mem	= 648MB
+score = 307.333333333
+
+
+
+default_statistics_target	= 840
+seq_page_cost	= 32.4
+checkpoint_completion_target	= 0.159
+cpu_index_tuple_cost	= 25.745
+shared_buffers	= 323MB
+cpu_tuple_cost	= 26.467
+random_page_cost	= 26.725
+effective_cache_size	= 115MB
+cpu_operator_cost	= 8.294
+work_mem	= 783MB
+wal_buffers	= 286MB
+checkpoint_segments	= 101
+maintenance_work_mem	= 648MB
+score = 306.333333333
+
+
+
+default_statistics_target	= 866
+seq_page_cost	= 32.4
+cpu_tuple_cost	= 26.467
+cpu_index_tuple_cost	= 25.745
+maintenance_work_mem	= 672MB
+checkpoint_completion_target	= 0.159
+random_page_cost	= 26.725
+effective_cache_size	= 100MB
+cpu_operator_cost	= 8.294
+work_mem	= 804MB
+wal_buffers	= 261MB
+checkpoint_segments	= 111
+shared_buffers	= 189MB
+score = 305.0
+
+
+
+default_statistics_target	= 883
+seq_page_cost	= 32.4
+checkpoint_completion_target	= 0.1759
+cpu_index_tuple_cost	= 25.745
+shared_buffers	= 314MB
+cpu_tuple_cost	= 26.467
+random_page_cost	= 26.725
+effective_cache_size	= 100MB
+cpu_operator_cost	= 8.294
+work_mem	= 792MB
+wal_buffers	= 286MB
+checkpoint_segments	= 111
+maintenance_work_mem	= 648MB
+score = 300.666666667
+
+
+
+default_statistics_target	= 883
+seq_page_cost	= 44.351
+cpu_tuple_cost	= 26.467
+cpu_index_tuple_cost	= 25.745
+shared_buffers	= 172MB
+checkpoint_completion_target	= 0.159
+random_page_cost	= 26.725
+effective_cache_size	= 100MB
+cpu_operator_cost	= 8.294
+work_mem	= 804MB
+wal_buffers	= 310MB
+checkpoint_segments	= 111
+maintenance_work_mem	= 576MB
+score = 302.0
+
+
+
+default_statistics_target	= 883
+seq_page_cost	= 32.4
+checkpoint_completion_target	= 0.159
+cpu_index_tuple_cost	= 25.745
+maintenance_work_mem	= 625MB
+cpu_tuple_cost	= 26.467
+random_page_cost	= 26.725
+effective_cache_size	= 138MB
+cpu_operator_cost	= 8.294
+work_mem	= 830MB
+wal_buffers	= 286MB
+checkpoint_segments	= 91
+shared_buffers	= 314MB
+score = 282.666666667
+
+
+
+default_statistics_target	= 883
+seq_page_cost	= 32.4
+cpu_tuple_cost	= 4.459
+cpu_index_tuple_cost	= 25.745
+shared_buffers	= 196MB
+checkpoint_completion_target	= 0.159
+random_page_cost	= 26.725
+effective_cache_size	= 107MB
+cpu_operator_cost	= 8.294
+work_mem	= 791MB
+wal_buffers	= 237MB
+checkpoint_segments	= 121
+maintenance_work_mem	= 648MB
+score = 302.0
+
+
+
+default_statistics_target	= 890
+seq_page_cost	= 32.4
+cpu_tuple_cost	= 26.467
+cpu_index_tuple_cost	= 25.745
+shared_buffers	= 182MB
+checkpoint_completion_target	= 0.159
+random_page_cost	= 26.725
+effective_cache_size	= 115MB
+cpu_operator_cost	= 8.294
+work_mem	= 769MB
+wal_buffers	= 261MB
+checkpoint_segments	= 58
+maintenance_work_mem	= 623MB
+score = 305.666666667
+
+
+
+default_statistics_target	= 866
+seq_page_cost	= 32.4
+cpu_tuple_cost	= 26.467
+cpu_index_tuple_cost	= 25.745
+shared_buffers	= 182MB
+checkpoint_completion_target	= 0.17685
+random_page_cost	= 26.725
+effective_cache_size	= 130MB
+cpu_operator_cost	= 8.294
+work_mem	= 804MB
+wal_buffers	= 304MB
+checkpoint_segments	= 73
+maintenance_work_mem	= 647MB
+score = 305.0
+
+
+
+default_statistics_target	= 866
+seq_page_cost	= 44.351
+cpu_tuple_cost	= 26.467
+cpu_index_tuple_cost	= 25.745
+maintenance_work_mem	= 576MB
+checkpoint_completion_target	= 0.159
+random_page_cost	= 26.725
+effective_cache_size	= 544MB
+cpu_operator_cost	= 8.294
+work_mem	= 783MB
+wal_buffers	= 304MB
+checkpoint_segments	= 58
+shared_buffers	= 196MB
+score = 288.666666667
+
+
+
+default_statistics_target	= 866
+seq_page_cost	= 32.4
+cpu_tuple_cost	= 26.467
+cpu_index_tuple_cost	= 25.745
+maintenance_work_mem	= 632MB
+checkpoint_completion_target	= 0.159
+random_page_cost	= 26.725
+effective_cache_size	= 115MB
+cpu_operator_cost	= 8.294
+work_mem	= 830MB
+wal_buffers	= 262MB
+checkpoint_segments	= 91
+shared_buffers	= 314MB
+score = 302.666666667
+
+
+
+default_statistics_target	= 866
+seq_page_cost	= 32.4
+cpu_tuple_cost	= 26.467
+cpu_index_tuple_cost	= 25.745
+shared_buffers	= 182MB
+checkpoint_completion_target	= 0.159
+random_page_cost	= 26.725
+effective_cache_size	= 115MB
+cpu_operator_cost	= 8.294
+work_mem	= 806MB
+wal_buffers	= 312MB
+checkpoint_segments	= 115
+maintenance_work_mem	= 671MB
+score = 304.333333333
+
+
+
+default_statistics_target	= 883
+seq_page_cost	= 32.4
+cpu_tuple_cost	= 26.467
+cpu_index_tuple_cost	= 25.745
+maintenance_work_mem	= 648MB
+checkpoint_completion_target	= 0.1565
+random_page_cost	= 26.725
+effective_cache_size	= 100MB
+cpu_operator_cost	= 8.294
+work_mem	= 785MB
+wal_buffers	= 286MB
+checkpoint_segments	= 58
+shared_buffers	= 182MB
+score = 307.333333333
+
+
+
+default_statistics_target	= 887
+seq_page_cost	= 32.4
+checkpoint_completion_target	= 0.1812
+cpu_index_tuple_cost	= 25.745
+maintenance_work_mem	= 648MB
+cpu_tuple_cost	= 26.467
+random_page_cost	= 26.725
+effective_cache_size	= 115MB
+cpu_operator_cost	= 8.294
+work_mem	= 783MB
+wal_buffers	= 261MB
+checkpoint_segments	= 109
+shared_buffers	= 184MB
+score = 306.666666667
+
+
+
+default_statistics_target	= 887
+seq_page_cost	= 32.4
+checkpoint_completion_target	= 0.17685
+cpu_index_tuple_cost	= 25.745
+shared_buffers	= 304MB
+cpu_tuple_cost	= 4.459
+random_page_cost	= 26.725
+effective_cache_size	= 115MB
+cpu_operator_cost	= 8.294
+work_mem	= 783MB
+wal_buffers	= 286MB
+checkpoint_segments	= 114
+maintenance_work_mem	= 648MB
+score = 305.0
+
+
+
+default_statistics_target	= 866
+seq_page_cost	= 44.351
+cpu_tuple_cost	= 4.459
+cpu_index_tuple_cost	= 25.745
+shared_buffers	= 189MB
+checkpoint_completion_target	= 0.1812
+random_page_cost	= 26.725
+effective_cache_size	= 115MB
+cpu_operator_cost	= 8.294
+work_mem	= 761MB
+wal_buffers	= 286MB
+checkpoint_segments	= 95
+maintenance_work_mem	= 648MB
+score = 295.333333333
+
+
