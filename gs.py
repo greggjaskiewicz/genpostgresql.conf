@@ -83,16 +83,19 @@ def eliminate_weakests(the_test_population):
   for guy in the_test_population:
     if guy.result < 1:
       the_test_population.remove(guy)
-  print 'foo1:' + str(len(the_test_population))
 
   the_test_population = sorted(the_test_population, key=lambda guy: guy.result)
-  print 'foo2:' + str(len(the_test_population))
-
   the_test_population.reverse()
-  print 'foo3:' + str(len(the_test_population))
-
+  for guy in the_test_population:
+    print guy.result
+  print '\n'
+  """
+     maybe use average as cut off point ?
+     but then, what about new generation when there's not enough parents ?
+     We could also use historical median/average as a cut off point. But this might be bit
+     problematic
+  """
   the_test_population = the_test_population[0:population_size/2]
-  print 'foo4:' + str(len(the_test_population))
 
   return the_test_population
 
@@ -134,7 +137,7 @@ def main():
   print 'foo1'
 
   for i in range(1000):
-    print 'foo %d' % len(current_population)
+    print '\n===============\nNew Population %d, %d members\n===============\n' % (i, len(current_population))
 
     """dump this population, before it is run, it will eventually get overriden with the one with results"""
     dump_population(i, current_population)
